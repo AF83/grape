@@ -2,6 +2,9 @@ source 'http://rubygems.org'
 
 gemspec
 
+
+gem 'virtus',                         '~> 1.0.0.beta0'
+
 group :development, :test do
   gem 'pry'
   gem 'guard'

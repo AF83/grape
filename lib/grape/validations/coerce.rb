@@ -48,7 +48,7 @@ module Grape
 
       def coerce_value(type, val)
         converter = Virtus::Attribute.build(:a, type)
-        converter.coerce(val)
+        converter.writer.coerce(val)
 
       # not the prettiest but some invalid coercion can currently trigger
       # errors in Virtus (see coerce_spec.rb)
